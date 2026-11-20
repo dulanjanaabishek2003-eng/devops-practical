@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return "Hello! Flask Docker Application is Running Successfully!"
+    return "DevOps Phase 6 - CI/CD Automatic Deployment V2"
 
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))

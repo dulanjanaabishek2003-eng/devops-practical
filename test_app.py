@@ -1,4 +1,3 @@
-
 from app import app
 
 def test_home():
@@ -7,4 +6,5 @@ def test_home():
     response = client.get('/')
 
     assert response.status_code == 200
-    assert b"Hello! Flask Docker Application is Running Successfully!" in response.data
+
+    assert b"DevOps Phase 6 - CI/CD Automatic Deployment V2" in response.data
