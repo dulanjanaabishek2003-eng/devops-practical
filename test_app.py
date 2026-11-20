@@ -7,5 +7,4 @@ def test_home():
     response = client.get('/')
 
     assert response.status_code == 200
-
-    assert b"Hello, DevOps World! V1" in response.data
+    assert b"Hello! Flask Docker Application is Running Successfully!" in response.data
